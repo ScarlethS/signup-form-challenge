@@ -1,0 +1,224 @@
+  /* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->   */
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+ 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-size: 16px;
+    color: white;  
+    margin: auto;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 90%;
+}
+
+main{
+    padding: 4.4rem 0;
+}
+
+.background-img{
+    background-image: url("./images/bg-intro-mobile.png");
+    height: 100%;    
+    background-color: rgba(255, 121, 120, 1);
+}
+
+.box-text-home-page{
+    margin: 1rem;
+}
+
+h1{
+    font-weight: 800;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+h2{
+    color: rgba(255, 255, 255, .9);
+    font-size: 1.15em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.6rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem; 
+}
+
+h3{
+    background-color: hsl(248, 32%, 49%);
+    padding: 1em 2em;
+    border-radius: .4rem;
+    color: rgba(255, 255, 255, 0.755);
+    font-weight: 400;
+    box-shadow: 0em 0.4em rgba(0, 0, 0, 0.150);
+    border: 1px solid rgb(80 69 145);
+    text-align: center;
+}
+
+h3 span{
+    color: white;
+    font-weight: 600;
+}
+
+.form-section{
+    margin: 1rem;
+}
+
+.container-form{
+    background-color: white;
+    border-radius: .4rem;
+    padding: 1.8rem;  
+    margin: 1.5rem 0; 
+    box-shadow: 0em 0.4em rgba(0, 0, 0, 0.200); 
+}
+
+.container-form input{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: .4rem;
+    border: 1px solid hsl(0deg 2% 71%);
+    font-weight: 700;
+    width: 100%;
+    position: relative;
+}
+
+input:hover, input:active{
+    border: 1px solid hsl(248, 32%, 49%);
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border-color: hsl(249, 10%, 26%);
+    color: hsl(249, 10%, 26%);
+}
+
+.msg-field{
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    text-align: end;
+}
+
+.icon-error{
+    position: absolute;
+    margin: 1.3em 0em 0em -3em;
+}
+
+
+
+.msg-field,
+.icon-error{
+    display: none;
+}
+
+.button-claim{
+    margin: 1rem 0;
+    padding: 0.8rem;
+    background-color: hsl(154, 59%, 51%);    
+    border: none;
+    color: white;
+    letter-spacing: .06rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: .4rem;
+    box-shadow: 0em .2em rgba(46, 167, 114);
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-claim:hover{
+    background-color: hsl(154, 55%, 60%);
+}
+
+.clicking-msg-term{
+    color: hsl(246, 25%, 77%);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.link-terms{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.error input{
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+.error input:focus{
+    color: hsl(0, 100%, 74%);
+}
+
+.error .icon-error{
+    display: inline;
+    opacity: 1;
+
+}
+
+.error .msg-field{
+    display: block;
+}
+
+@media (min-width:1024px){
+    .background-img{
+        background-image: url("./images/bg-intro-desktop.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;    
+        background-position-y: center;
+    }
+    
+    .main-section{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+    }
+
+    h1{
+        text-align: left; 
+        font-size: 3em;      
+    }
+
+    h2{
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+    .box-text-home-page {
+        flex: 50%;
+        padding: 1rem;
+    }
+ 
+    .form-section {
+        flex: 50%;
+        padding: 0rem;
+    }
+
+}
+
+
+@media (min-width: 1600px){   
+    
+    .box-text-home-page{
+        padding-left: 100px;
+        padding-right: 95px;
+        flex: 46%;
+    }
+
+    .form-section{
+        flex: 50%;
+        padding-right: 97px;
+        padding-left: 71px;        
+    }
+
+
+}
